@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__items">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="header__menu">
+                    <a class="header__item header__item_active">БИЗНЕС</a>
+                    <a class="header__item">О НАС</a>
+                    <a class="header__item">ЦЕНЫ</a>
+                    <a class="header__item">ОФОРМИТЬ ЗАКАЗ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="promo">
+        <div class="container">
+            <div class="promo__title">
+                <span class="promo__title promo__title_blue">Lorem ipsum</span> dolor sit
+                <br> amet consectetur <span class="promo__title promo__title_blue">adipiscing</span>
+            </div>
+            <div class="promo__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+                <ul>
+                    <li>- Totam rem aperiam eaque ipsa</li>
+                    <li>- Sit voluptatem accusantium doloremque laudantium</li>
+                    <li>- Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+            </div>
+            <div class="promo__buttons">
+                <button class="button button_blue">Заказать</button>
+                <button class="button button_white">Подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="container">
+            <div class="form__title">
+                Оформление <span class="form__title_blue">заказа</span>
+            </div>
+            <div class="form__subtitle">
+                Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            </div>
+            <div class="form__scheme">
+                <div class="form__icon">
+                    <div class="icon">
+                        <img src="icons/search.png">
+                    </div>
+                    Lorem ipsum dolorsit amet
+                </div>
+
+                <div class="elipse">
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                </div>
+                <div class="form__icon">
+                    <div class="icon">
+                        <img src="icons/procent.png">
+                    </div>
+                    Сonsecteturadipiscing elit
+                </div>
+                <div class="elipse">
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                </div>
+                <div class="form__icon">
+                    <div class="icon">
+                        <img src="icons/file.png">
+                    </div>
+                    Sed do eiusmod tempor
+                </div>
+                <div class="elipse">
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                </div>
+                <div class="form__icon">
+                    <div class="icon">
+                        <img src="icons/letter.png">
+                    </div>
+                    Esse cillum dolore eu fugiat
+                </div>
+                <div class="elipse">
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                    <div class="cyrcle"></div>
+                </div>
+                <div class="form__icon">
+                    <div class="icon">
+                        <img src="icons/money.png">
+                    </div>
+                    Excepteur sint occaecat cupidatat non proident
+                </div>
+            </div>
+            <div class="form__input">
+
+                <div class="select" name="form_user_select">
+                    <div class="select__header">
+                        <span class="select__current">Выберите тип системы</span>
+                        <div class="select__icon"></div>
+                    </div>
+                    <div class="select__body">
+                        <div class="select__item">Sed ut perspiciatis</div>
+                        <div class="select__item">Nemo enim ipsam</div>
+                        <div class="select__item">Et harum quidem</div>
+                        <div class="select__item">Temporibus autem</div>
+                        <div class="select__item">Itaque earum rerum</div>
+                        <div class="select__item">Temporibus autem</div>
+                        <div class="select__item">Itaque earum rerum</div>
+                    </div>
+                </div>
+                <input placeholder="Ваш e-mail" type="email" name="form_user_email">
+                <input placeholder="Ваше имя" type="text" name="form_user_name">
+            </div>
+            <div class="form__file" name="form_user_file">
+                <div class="form__slider">
+                    <div class="form__slider-title">
+                        Sed ut perspiciatis, unde omnis iste natus
+                    </div>
+                    <div class="form__slider-procent">
+                        75%
+                    </div>
+                    <div class="slider" name="form_user_slider">
+                        <input
+                            onchange="document.querySelector('.form__slider-procent').innerHTML= document.querySelector('.range').value + '%'"
+                            class="range" type="range" min="0" max="100" step="1" value="75">
+                    </div>
+
+                </div>
+                <label class="input-file">
+                    <input type="file" name="file">
+                    <span><img src="icons/button.png">Прикрепить файл</span>
+                </label>
+            </div>
+            <input type="submit" class="form__button" name="form_send"></input>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__elements">
+                <div class="footer__element footer__element_white footer__element_one">© 2018 «LoremIpsum.net» Все права
+                    защищены.</div>
+                <div class="slash"></div>
+                <div class="footer__element footer__element_two"><img src="icons/qiwi.png">Qiwi wallet</div>
+                <div class="footer__element footer__element_three"><img src="icons/yandex.png">Yandex Money</div>
+                <div class="footer__element footer__element_four"><img src="icons/webMoney.png">Web Money</div>
+                <div class="slash"></div>
+                <a href="#" class="footer__element_white footer__element footer__element_five"><img
+                        src="icons/info.png">info@ipsum228.com</a>
+                <a href="#" class="footer__element_white footer__element footer__element_six"><img src="icons/vk.png">Мы
+                    вконтакте</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

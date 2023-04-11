@@ -1,0 +1,48 @@
+.promo {
+    display: block;
+    min-height: 650px;
+    max-height: 850px;
+    box-sizing: border-box;
+    padding: 203px 0 93px 0;
+    background: url(../img/main.jpg) no-repeat center/cover;
+
+    &__title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+
+        &_blue {
+            color: $main_color;
+        }
+    }
+
+    &__text {
+        margin: 80px 0 80px 0;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+
+        ul {
+            padding-inline-start: 0;
+            margin: 10px;
+        }
+
+        li {
+            font-family: 'Lato';
+            font-weight: 400;
+            list-style-type: none;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}

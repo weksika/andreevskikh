@@ -1,0 +1,265 @@
+@import './base/variables';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+input,
+.select {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #272733;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    background: $main_color;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+input::placeholder {
+    opacity: 1;
+    -moz-opacity: 1;
+    color: #272733;
+}
+
+.button {
+    border-radius: 4px;
+    width: 183px;
+    height: 43px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &_blue {
+        background: $main_color;
+        border: 1px solid #FFFFFF;
+        color: #fff;
+    }
+
+    &_white {
+        background: #FFFFFF;
+        border: 1px solid #6F6D7B;
+        color: #2A2B30;
+    }
+}
+
+.select {
+    position: relative;
+    text-align: left;
+
+    &__header {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    &__current {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__icon {
+        display: flex;
+        height: 20px;
+        margin-left: auto;
+        width: 20px;
+        background: url(../icons/sparrow0.png) no-repeat center/cover;
+    }
+
+    &__body {
+        scrollbar-color: $main_color #3D4050;
+        scrollbar-width: thin;
+
+        display: none;
+        overflow-x: scroll;
+        border-top: 0;
+        background: rgba(39, 39, 51, 0.9);
+        border: 1px solid #3D4050;
+        border-radius: 3px;
+        max-height: 180px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #FFFFFF;
+
+        top: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+
+        div:hover {
+            color: $main_color;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        line-height: 24px;
+        font-size: 18px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+
+    &__body::-webkit-scrollbar {
+        width: 7px;
+        height: 0px;
+    }
+
+    &__body::-webkit-scrollbar-track {
+        background: #3D4050;
+        border-radius: 3px;
+    }
+
+    &__body::-webkit-scrollbar-thumb {
+        background: $main_color;
+        border-radius: 3px;
+    }
+}
+
+.select.is-active {
+    background: rgba(61, 64, 80, 0.85);
+    border-radius: 3px 3px 0px 0px;
+    border: none;
+    color: #FFFFFF;
+
+    .select {
+        &__body {
+            display: block;
+        }
+
+        &__icon {
+            background: url(../icons/sparrow.png) no-repeat center/cover;
+        }
+    }
+}
+
+.cyrcle {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #C4C4C4;
+    border-radius: 100px;
+}
+
+.elipse::after,
+.elipse::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #C4C4C4;
+    border-radius: 100px;
+}
+
+.elipse {
+    display: flex;
+    margin: -30px -60px 0 -60px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: $main_color;
+    border: 5px solid $border_color;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+    img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+
+.input-file {
+    position: relative;
+    display: block;
+    width: 370px;
+    height: 48px;
+
+    span {
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+        color: #272733;
+        background: #FFFFFF;
+        border: 2px solid $main_color;
+        border-radius: 3px;
+    }
+
+    input[type=file] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+}
+
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/form';
+@import './blocks/footer';
+@import './blocks/media';
